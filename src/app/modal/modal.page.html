@@ -1,0 +1,7 @@
+
+  <div class="modal-container">
+    <h2>{{ animal?.name }}</h2>
+    <img [src]="animal?.image" [alt]="animal?.name" />
+    <p>{{ animal?.description }}</p>
+    <ion-button (click)="closeModal()">Fechar</ion-button>
+  </div>

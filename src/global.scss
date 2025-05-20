@@ -35,3 +35,20 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+.custom-modal-class {
+  --background: transparent !important; // remove o fundo branco do wrapper completo
+}
+
+.custom-modal-class .modal-wrapper {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 16px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,20 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-card *ngFor="let animal of animals" (click)="openModal(animal)">
+  <img [src]="animal.image" alt="{{ animal.name }}" />
+  <ion-card-header>
+    <ion-card-title>{{ animal.name }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{ animal.description }}
+  </ion-card-content>
+</ion-card>
