@@ -1,7 +1,12 @@
-
+<div class="modal-overlay">
   <div class="modal-container">
     <h2>{{ animal?.name }}</h2>
     <img [src]="animal?.image" [alt]="animal?.name" />
-    <p>{{ animal?.description }}</p>
-    <ion-button (click)="closeModal()">Fechar</ion-button>
+
+    <div class="description-box">
+      <p>{{ animal?.description }}</p>
+    </div>
+
+    <ion-button expand="block" (click)="closeModal()">Fechar</ion-button>
   </div>
+</div>

@@ -14,17 +14,20 @@ export class HomePage {
     {
       name: 'Fuinha',
       image: 'assets/fuinha.jpeg',
-      description: 'Topeira suprema'
+      descriptionView: 'Topeira',
+      description: 'A fuinha é um pequeno mamífero carnívoro da família dos mustelídeos, mesma família das doninhas, lontras e martas. Com corpo alongado, patas curtas e pelagem marrom com uma mancha branca no pescoço, ela é ágil, curiosa e excelente caçadora.'
     },
     {
       name: 'Rato',
       image: 'assets/rato.jpeg',
-      description: 'O noob supremo'
+      descriptionView: 'Ratoncios',
+      description: 'O rato é um pequeno mamífero roedor pertencente à família Muridae, geralmente do gênero Rattus. É conhecido por sua inteligência, adaptabilidade e capacidade de sobreviver em diversos ambientes, incluindo áreas urbanas.'
     },
     {
       name: 'Foca',
       image: 'assets/foca.png',
-      description: 'The noob'
+      descriptionView: 'Foquinhas',
+      description: 'As focas são mamíferos marinhos pertencentes à família Phocidae (focas verdadeiras), que vivem principalmente em ambientes costeiros e polares, tanto no hemisfério norte quanto no sul. São conhecidas por seu corpo hidrodinâmico adaptado para a vida aquática, com nadadeiras em vez de patas, o que lhes permite nadar com agilidade.'
     },
     {
       name: 'Porquinho',

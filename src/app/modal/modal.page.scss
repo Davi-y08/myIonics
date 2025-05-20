@@ -1,44 +1,68 @@
-.modal-content {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 340px;
+  padding: 24px;
   text-align: center;
 }
 
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
 
+h2 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #222;
+}
 
-  .modal-container {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    max-width: 320px;
-    width: 90%;
-    padding: 24px;
-    text-align: center;
-  }
-
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 16px;
-  }
-
-  h2 {                                  
-    margin-bottom: 12px;
-    font-weight: 700;
-    color: #222;
-  }
+.description-box {
+  max-height: 120px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: left;
 
   p {
+    margin: 0;
     font-size: 1rem;
     color: #666;
-    margin-bottom: 24px;
+    line-height: 1.5;
   }
+}
 
-  ion-button {
-    --background: #3880ff;
-    --border-radius: 8px;
-    font-weight: 600;
-    padding: 12px 0;
-    width: 100%;
-  }
-                                                                                                                                                  
+ion-button {
+  --background: #3880ff;
+  --border-radius: 8px;
+  font-weight: 600;
+  padding: 12px 0;
+  width: 100%;
+}

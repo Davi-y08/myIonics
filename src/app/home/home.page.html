@@ -1,9 +1,13 @@
-<ion-card *ngFor="let animal of animals" (click)="openModal(animal)">
-  <img [src]="animal.image" alt="{{ animal.name }}" />
-  <ion-card-header>
-    <ion-card-title>{{ animal.name }}</ion-card-title>
-  </ion-card-header>
-  <ion-card-content>
-    {{ animal.description }}
-  </ion-card-content>
-</ion-card>
+<ion-content class="card-container" fullscreen>
+  <div class="card-list">
+    <ion-card *ngFor="let animal of animals" (click)="openModal(animal)">
+      <img [src]="animal.image" alt="{{ animal.name }}" />
+      <ion-card-header>
+        <ion-card-title>{{ animal.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ animal.descriptionView }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
