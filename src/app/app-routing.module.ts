@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'modal',
     loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
   },
+  {
+    path: 'animais-favoritos',
+    loadChildren: () => import('./animais-favoritos/animais-favoritos.module').then( m => m.AnimaisFavoritosPageModule)
+  },
 ];
 
 @NgModule({
